@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #F8F8F8;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-weight: 1rem;
+    color: #1792D2;
+}
+
+h1 {
+    font-family: "Lora";
+    font-size: 3.375rem;
+    margin-bottom: 0;
+    color: #143774;
+}
+
+.subtitle {
+    margin-top: 0;
+    font-size: 1rem;
+    font-family: "Ubuntu";
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    padding: 10px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    color: #707070;
+}
+
+.active {
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
