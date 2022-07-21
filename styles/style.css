@@ -4,6 +4,11 @@ body {
     font-family: "Ubuntu", sans-serif;
 }
 
+.container-flex {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
 header {
     text-align: center;
     background: #F8F8F8;
@@ -34,8 +39,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0 1em;
-    margin: 0.5em 0;
+    margin: 0.5em;
 }
 nav a {
     text-decoration: none;
@@ -57,4 +61,30 @@ nav a:focus {
 .current-page:hover,
 .current-page:focus {
     color: #707070
+}
+
+@media screen and (min-width: 675px) {
+    .container-flex {
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    nav a {
+        padding: .25em 0;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        padding: 0 2em;
+    }
+
+        nav li:last-of-type {
+            padding-right: 0;
+        }
+
+        .subtitle {
+            text-align: left;
+        }
 }
